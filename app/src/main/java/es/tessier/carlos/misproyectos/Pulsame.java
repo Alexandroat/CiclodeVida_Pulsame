@@ -21,14 +21,14 @@ public class Pulsame extends Activity {
         setContentView(R.layout.activity_pulsame);
         btn = (Button) findViewById(R.id.button2);
 
-        if (savedInstanceState != null){
+        if (savedInstanceState != null) {
             contador = savedInstanceState.getInt(contadorKey);
             btn.setText("Pulsado " + contador + " veces");
             //pulsar(btn);
         }
     }
 
-    public void pulsar (View v){
+    public void pulsar(View v) {
 
         btn.setText("Pulsado " + ++contador + " veces");
     }
@@ -57,7 +57,7 @@ public class Pulsame extends Activity {
     }
 
     @Override
-     protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(contadorKey, contador);
     }

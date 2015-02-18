@@ -33,12 +33,70 @@
             android:parentActivityName=".Actividad_Intent_1" >
         </activity>
         <activity
+            android:name=".Intents_Act_02"
+            android:label="@string/title_activity_actividad_intent_1a"
+            android:parentActivityName=".Intents_Act_02" >
+        </activity>
+        <activity
+            android:name=".Intents_Act_02_B"
+            android:label="@string/title_activity_actividad_intent_1b"
+            android:parentActivityName=".Intents_Act_02_B" >
+        </activity>
+        <activity
+            android:name=".Intents_Act_03"
+            android:label="@string/title_activity_actividad_intent_1a"
+            android:parentActivityName=".Intents_Act_03" >
+        </activity>
+        <activity
+            android:name=".Intents_Act_03_B"
+            android:label="@string/title_activity_actividad_intent_1b"
+            android:parentActivityName=".Intents_Act_03_B" >
+        </activity>
+        <activity
             android:name=".CicloDeVida"
             android:label="@string/title_activity_ciclo_de_vida" >
         </activity>
         <activity
             android:name=".Pulsame"
             android:label="@string/title_activity_pulsame" >
+        </activity>
+        <activity
+            android:name=".ImplicitIntents"
+            android:label="@string/title_activity_implicit_intents" >
+        </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="es.tessier.carlos.misproyectos.CUSTOM_INTENT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".BroadcastReciver"
+            android:label="@string/title_activity_broadcast_reciver" >
+        </activity>
+        <activity
+            android:name=".PublicacionBlogListActivity"
+            android:label="@string/title_publicacionblog_list" >
+        </activity>
+        <activity
+            android:name=".PublicacionBlogDetailActivity"
+            android:label="@string/title_publicacionblog_detail"
+            android:parentActivityName=".PublicacionBlogListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.tessier.carlos.misproyectos.PublicacionBlogListActivity" />
+        </activity>
+        <activity
+            android:name=".Fragmentos"
+            android:label="@string/title_activity_fragmentos" >
+        </activity>
+        <activity
+            android:name=".Progress"
+            android:label="@string/title_activity_progress" >
         </activity>
     </application>
 

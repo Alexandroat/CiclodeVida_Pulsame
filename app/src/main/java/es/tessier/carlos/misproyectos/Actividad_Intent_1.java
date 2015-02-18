@@ -16,8 +16,8 @@ public class Actividad_Intent_1 extends Activity {
         setContentView(R.layout.activity_actividad__intent_1);
     }
 
-    public void onClick(View boton){
-        Intent intent = new Intent(this,Actividad_Intent_1_2.class);
+    public void onClick(View boton) {
+        Intent intent = new Intent(this, Actividad_Intent_1_2.class);
         startActivity(intent);
 
     }
